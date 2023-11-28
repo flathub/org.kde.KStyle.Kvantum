@@ -1,10 +1,10 @@
 {
     "id": "org.kde.KStyle.Kvantum",
-    "branch": "5.15-22.08",
+    "branch": "5.15-23.08",
     "runtime": "org.kde.Platform",
     "build-extension": true,
     "sdk": "org.kde.Sdk",
-    "runtime-version": "5.15-22.08",
+    "runtime-version": "5.15-23.08",
     "separate-locales": false,
     "appstream-compose": false,
     "build-options": {

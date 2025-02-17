@@ -6,7 +6,6 @@
     "sdk": "org.kde.Sdk",
     "runtime-version": "6.8",
     "separate-locales": false,
-    "appstream-compose": true,
     "build-options": {
         "prefix": "/usr/share/runtime/lib/plugins/Kvantum"
     },
@@ -47,8 +46,7 @@
             "name": "appdata",
             "buildsystem": "simple",
             "build-commands": [
-                "install -Dm644 ${FLATPAK_ID}.appdata.xml -t ${FLATPAK_DEST}/share/appdata/",
-                "appstream-compose --basename=${FLATPAK_ID} --prefix=${FLATPAK_DEST} --origin=flatpak ${FLATPAK_ID}"
+                "install -Dm644 ${FLATPAK_ID}.appdata.xml -t ${FLATPAK_DEST}/share/appdata/"
             ],
             "sources": [
                 {

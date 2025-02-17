@@ -1,10 +1,10 @@
 {
     "id": "org.kde.KStyle.Kvantum",
-    "branch": "5.15-22.08",
+    "branch": "6.8",
     "runtime": "org.kde.Platform",
     "build-extension": true,
     "sdk": "org.kde.Sdk",
-    "runtime-version": "5.15-22.08",
+    "runtime-version": "6.8",
     "separate-locales": false,
     "appstream-compose": false,
     "build-options": {
@@ -14,6 +14,9 @@
         {
             "name": "kvantum",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DENABLE_QT5=OFF"
+            ],
             "build-commands": [
                 "install -Dm755 -t ${FLATPAK_DEST}/styles/ style/libkvantum.so"
             ],
@@ -36,7 +39,7 @@
                     "type": "shell",
                     "dest": "Kvantum/style",
                     "commands": [
-                        "sed \"s|\\${_Qt5_PLUGIN_INSTALL_DIR}|${FLATPAK_DEST}|g\" -i CMakeLists.txt"
+                        "sed \"s|\\${_Qt6_PLUGIN_INSTALL_DIR}|${FLATPAK_DEST}|g\" -i CMakeLists.txt"
                     ]
                 }
             ]

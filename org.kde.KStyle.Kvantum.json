@@ -6,7 +6,7 @@
     "sdk": "org.kde.Sdk",
     "runtime-version": "6.8",
     "separate-locales": false,
-    "appstream-compose": false,
+    "appstream-compose": true,
     "build-options": {
         "prefix": "/usr/share/runtime/lib/plugins/Kvantum"
     },
@@ -15,8 +15,7 @@
             "name": "kvantum",
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DENABLE_QT5=OFF"
-            ],
+                "-DENABLE_QT5=OFF"            ],
             "build-commands": [
                 "install -Dm755 -t ${FLATPAK_DEST}/styles/ style/libkvantum.so"
             ],

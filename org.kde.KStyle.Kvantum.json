@@ -47,7 +47,7 @@
             "name": "appdata",
             "buildsystem": "simple",
             "build-commands": [
-                "install -Dm644 ${FLATPAK_ID}.appdata.xml -t ${FLATPAK_DEST}/share/appdata/"
+                "install -Dm644 ${FLATPAK_ID}.appdata.xml -t ${FLATPAK_DEST}/share/appdata/" ]
             "sources": [
                 {
                     "type": "file",

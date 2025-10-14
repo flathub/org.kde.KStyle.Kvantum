@@ -1,10 +1,10 @@
 {
     "id": "org.kde.KStyle.Kvantum",
-    "branch": "5.15-22.08",
+    "branch": "6.9",
     "runtime": "org.kde.Platform",
     "build-extension": true,
     "sdk": "org.kde.Sdk",
-    "runtime-version": "5.15-22.08",
+    "runtime-version": "6.9",
     "separate-locales": false,
     "appstream-compose": false,
     "build-options": {
@@ -22,8 +22,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/tsujan/Kvantum.git",
-                    "tag": "V1.0.10",
-                    "commit": "a868cd0b4f98bc5f72d15dafbebd0cdc8dd11f2e",
+                    "tag": "V1.1.5",
+                    "commit": "8acc24e13ffea00e7b4b50abc0fdf81b59757465",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/tsujan/Kvantum/releases/latest",
@@ -36,7 +36,7 @@
                     "type": "shell",
                     "dest": "Kvantum/style",
                     "commands": [
-                        "sed \"s|\\${_Qt5_PLUGIN_INSTALL_DIR}|${FLATPAK_DEST}|g\" -i CMakeLists.txt"
+                        "sed \"s|\\${_Qt6_PLUGIN_INSTALL_DIR}|${FLATPAK_DEST}|g\" -i CMakeLists.txt"
                     ]
                 }
             ]
@@ -45,8 +45,7 @@
             "name": "appdata",
             "buildsystem": "simple",
             "build-commands": [
-                "install -Dm644 ${FLATPAK_ID}.appdata.xml -t ${FLATPAK_DEST}/share/appdata/",
-                "appstream-compose --basename=${FLATPAK_ID} --prefix=${FLATPAK_DEST} --origin=flatpak ${FLATPAK_ID}"
+                "install -Dm644 ${FLATPAK_ID}.appdata.xml -t ${FLATPAK_DEST}/share/appdata/"
             ],
             "sources": [
                 {

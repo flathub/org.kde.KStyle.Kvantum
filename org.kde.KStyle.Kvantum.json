@@ -14,6 +14,9 @@
         {
             "name": "kvantum",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DENABLE_QT5=ON"
+            ],
             "build-commands": [
                 "install -Dm755 -t ${FLATPAK_DEST}/styles/ style/libkvantum.so"
             ],
@@ -22,8 +25,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/tsujan/Kvantum.git",
-                    "tag": "V1.0.10",
-                    "commit": "a868cd0b4f98bc5f72d15dafbebd0cdc8dd11f2e",
+                    "tag": "V1.1.5",
+                    "commit": "8acc24e13ffea00e7b4b50abc0fdf81b59757465",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/tsujan/Kvantum/releases/latest",

@@ -22,8 +22,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/tsujan/Kvantum.git",
-                    "tag": "V0.20.2",
-                    "commit": "f4f986b2f33413825c61ded07fbb3f3105af6e85",
+                    "tag": "V1.1.9",
+                    "commit": "7ffda1bab2a08f566eaa8d371a2381357e5b1f8b",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/tsujan/Kvantum/releases/latest",
